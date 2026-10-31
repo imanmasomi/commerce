@@ -1,4 +1,3 @@
-
 {% extends "auctions/layout.html" %}
 
 {% block body %}
@@ -15,6 +14,8 @@
             <p>{{ listing.description }}</p>
 
             <p>Starting Bid: ${{ listing.starting_bid }}</p>
+
+            <p>Current Bid: ${{ listing.current_bid }}</p>
 
             <p>Category: {{ listing.category }}</p>
 

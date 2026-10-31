@@ -12,6 +12,14 @@ from .models import User, Listing, Bid, Comment, Watchlist
 def index(request):
     listings = Listing.objects.filter(is_active=True)
 
+    for listing in listings:
+        highest_bid = listing.bids.all().order_by("-amount").first()
+
+        if highest_bid and highest_bid.amount > listing.starting_bid:
+            listing.current_bid = highest_bid.amount
+        else:
+            listing.current_bid = listing.starting_bid
+
     return render(request, "auctions/index.html", {
         "listings": listings
     })

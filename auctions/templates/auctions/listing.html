@@ -22,14 +22,12 @@
 
         {% if winner %}
             <h3>Auction Winner</h3>
-
             <p>Winner: {{ winner.bidder.username }}</p>
             <p>Winning Bid: ${{ winner.amount }}</p>
 
             {% if user == winner.bidder %}
                 <p><strong>Congratulations! You won this auction!</strong></p>
             {% endif %}
-
         {% else %}
             <p>No bids were placed. There is no winner.</p>
         {% endif %}
@@ -63,7 +61,7 @@
 
         <hr>
 
-        {% if listing.is_active %}
+        {% if listing.is_active and user != listing.owner %}
             <h3>Place a Bid</h3>
 
             <form action="{% url 'listing' listing.id %}" method="post">
