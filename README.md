@@ -45,4 +45,3 @@ Commerce is an online auction website built with Django.
 
 - GitHub: [imanmasomi](https://github.com/imanmasomi)
 
-- 
