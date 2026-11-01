@@ -1,5 +1,3 @@
-
-
 # Commerce
 
 Commerce is an online auction website built with Django.
@@ -27,14 +25,24 @@ Commerce is an online auction website built with Django.
 ## How to Run
 
 1. Open the project directory.
-2. Run the following command:
+2. Install the required dependencies.
+3. Run the following command:
 
    ```bash
    python manage.py runserver
    ```
 
-3. Open the local development server in your browser.
+4. Open the local development server in your browser.
 
 ## Demo Video
 
-[Watch the Commerce Project Demo](iman_masomi)
+[Watch the Commerce Project Demo](https://youtu.be/WjnlGvp993Q)
+
+
+## Author
+
+**Iman Masoomi**
+
+- GitHub: [imanmasomi](https://github.com/imanmasomi)
+
+- 
